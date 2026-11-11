@@ -1,0 +1,42 @@
+{
+	"work": "C:/films/acme-demo",
+	"out": "C:/films/acme-demo/acme-use-cases-explainer.mp4",
+	"brand": {
+		"primary": "0x1F3A5F",
+		"accent": "0xE07A1F",
+		"ink": "0x3A3A3A",
+		"background": "0xF2F2F2",
+		"fontBold": "C:/brand/fonts/Brand-Bold.ttf",
+		"fontRegular": "C:/brand/fonts/Brand-Regular.ttf",
+		"logo": "C:/brand/logo-primary.png",
+		"logoReversed": "C:/brand/logo-reversed-transparent.png",
+		"pattern": "C:/brand/pattern.png"
+	},
+	"music": "C:/films/audio/music.wav",
+	"sfxDir": "C:/films/audio/sfx",
+	"voice": "af_heart",
+	"speed": 0.95,
+	"recordings": {
+		"UC1": "C:/recordings/UC1-org-health-check-draft.mp4",
+		"UC2": "C:/recordings/UC2-agentforce-PO-to-quote-draft.mp4",
+		"UC2b": "C:/recordings/UC2b-agentforce-quote-agent-UI-draft.mp4",
+		"m1": "C:/films/acme-demo/m/m1.mp4"
+	},
+	"lines": {
+		"L00": "This is an AI developer for Salesforce. Here are two real builds, in a real Salesforce org.",
+		"L01": "First, a proactive health check. We ask the agent to find what needs fixing before the next release, and to ask before it changes anything.",
+		"L02": "It reads the org's Apex code, its tests and its quote data, without changing a thing.",
+		"L03": "In Salesforce, the test history goes from failures to zero. The agent also reports, honestly, that coverage is up but still short of seventy five percent.",
+		"L04": "And here is the Quote Agent in Agentforce Builder. A rep asks for a new quote in plain words, and the agent creates it.",
+		"L05": "The agent builds. You review and decide."
+	},
+	"sections": [
+		{ "vo": ["L00"], "clips": [{ "type": "card", "dur": 9, "title": "You prompt the agent. Salesforce gets built.", "sub": "Two real builds" }] },
+		{ "vo": ["L01"], "clips": [{ "type": "agent", "src": "UC1", "from": 23, "to": 30.5, "speed": 1, "crop": "HOME", "tag": "USE CASE 1  |  PROACTIVE ORG HEALTH CHECK", "title": "Find what needs fixing before the release", "note": "Real speed" }] },
+		{ "vo": ["L02"], "clips": [{ "type": "agent", "src": "m1", "from": 0, "to": 14.6, "speed": 1, "crop": "CHAT", "tag": "USE CASE 1  |  PROACTIVE ORG HEALTH CHECK", "title": "Read-only scan: Apex, tests and quote data", "note": "Shown about 120x faster" }] },
+		{ "vo": ["L03"], "clips": [{ "type": "web", "src": "UC1", "from": 3222, "to": 3292, "speed": 3.5, "tag": "IN SALESFORCE", "title": "Apex test history", "caption": "Before: failing tests  |  After: 0 failures" }] },
+		{ "vo": [], "clips": [{ "type": "still", "img": "C:/films/acme-demo/stills/quote.png", "crop": "PAGE", "dur": 4.5, "tag": "IN SALESFORCE", "title": "The quote", "caption": "Three lines, matching the PO" }] },
+		{ "vo": ["L04"], "clips": [{ "type": "web", "src": "UC2b", "from": 268, "to": 308, "speed": 2, "tag": "AGENTFORCE BUILDER", "title": "A rep asks the Quote Agent in plain words", "caption": "New quote created from the price book" }] },
+		{ "vo": ["L05"], "clips": [{ "type": "card", "dur": 5, "title": "The agent builds. You review and decide.", "foot": "www.example.com" }] }
+	]
+}
